@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "esNext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "paths": {},
+    "target": "esnext"
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["./node_modules", "./dist", "./service-worker"]
+}
