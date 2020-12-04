@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: isProd ? "[name]-bundle-[contenthash].js" : "[name]-bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/dist/"
+    publicPath: "/dist/",
   },
   resolve: {
     extensions: [".mjs", ".ts", ".tsx", ".js", ".svelte"],
@@ -21,13 +21,11 @@ module.exports = {
       {
         test: /\.(html|svelte)$/,
         use: [
-          {
-            loader: "babel-loader",
-          },
+          { loader: "babel-loader" },
           {
             loader: "svelte-loader",
             options: {
-              emitCss: true
+              emitCss: true,
             },
           },
         ],
