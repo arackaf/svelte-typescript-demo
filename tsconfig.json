@@ -2,7 +2,9 @@
   "compilerOptions": {
     "module": "esNext",
     "target": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false
   },
   "exclude": ["./node_modules"]
 }
