@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Helper from "./Helper.svelte";
 </script>
 

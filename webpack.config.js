@@ -1,6 +1,7 @@
 const path = require("path");
 const isProd = process.env.NODE_ENV == "production";
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const sveltePreprocess = require("svelte-preprocess");
 
 module.exports = {
   entry: {
@@ -26,6 +27,7 @@ module.exports = {
             loader: "svelte-loader",
             options: {
               emitCss: true,
+              preprocess: sveltePreprocess({})
             },
           },
         ],

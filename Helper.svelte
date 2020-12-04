@@ -1,5 +1,5 @@
-<script>
-  export let val;
+<script lang="ts">
+  export let val: number;
 </script>
 
-<h1>Temp {val}</h1>
+<h1>Value is: {val}</h1>
